@@ -20,6 +20,7 @@
 |log4j-to-slf4j.jar  |  log4j2 -> slf4j       |将 log4j2的日志桥接到 slf4j  (不能和 log4j-slf4j-impl 同时用)|
 |logback-core.jar    |                        |logback核心包|
 |logback-classic.jar |  slf4j  -> logback     |桥接包|
+|jboss-logging.jar (3.4版本) |    动态加载不同日志         |见LoggerProviders.findProvider()方法，优先配置，后jboss自身（jar包内已无），log4j2，log4j，logback（使用slf4j），slf4j，jdk的log依次进行尝试获取日志提供者|
 
 
 
